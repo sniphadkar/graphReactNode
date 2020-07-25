@@ -1,0 +1,95 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.pad15{
+  padding: 15px;
+}
+.pad10{
+  padding:0px 10px;
+  cursor: pointer;
+}
+.Heading{
+  font-size: 17px;;
+}
+ul{
+  list-style-type:none;
+}
+.is-done {
+  text-decoration: line-through;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+#Orders {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#Orders td, #Orders th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#Orders tr:nth-child(even){background-color: #f2f2f2;}
+
+#Orders tr:hover {background-color: #ddd;}
+
+#Orders th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+#Update {
+  display: flex;
+  flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+    text-align: right;
+	width: 100%;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20em, 30em));
+  grid-gap: .5rem;
+}
+
+#header {
+  text-align: center;
+}
+
